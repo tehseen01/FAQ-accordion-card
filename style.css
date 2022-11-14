@@ -62,41 +62,44 @@ article {
 }
 
 li {
-  border-bottom: 1px solid hsl(240, 5%, 91%);
   overflow: hidden;
-  padding: 1rem 0;
   position: relative;
+  border-bottom: 1px solid hsl(240, 5%, 91%);
 }
-
-.drop-down {
+.toggle {
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: hsl(237, 12%, 33%);
   cursor: pointer;
+  padding: 1rem 0;
 }
+
 .drop-down:hover {
   color: hsl(14, 88%, 65%);
 }
-.drop-down img {
+.toggle img {
   transition: all 0.5s ease;
 }
 .color {
   color: hsl(238, 29%, 16%);
-  font-size: 1rem;
+  font-weight: bold;
 }
 .color > img {
   transform: rotate(180deg);
 }
 p {
   color: hsl(240, 6%, 50%);
+  transition: all 0.5s ease;
 }
 
 .hide {
-  display: none;
+  height: 0;
 }
 .show {
+  height: 2.8rem;
   display: block;
+  margin-bottom: 0.5rem;
 }
 
 h1 {
@@ -143,9 +146,9 @@ ul {
 
   .box-img {
     display: block;
-    position: fixed;
-    left: 7.5rem;
-    top: 16.5rem;
+    position: absolute;
+    left: -5.5rem;
+    top: 11.5rem;
     z-index: 99;
   }
   picture img {

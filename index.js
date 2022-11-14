@@ -1,4 +1,4 @@
-const toggle = document.querySelectorAll(".drop-down");
+const toggle = document.querySelectorAll(".toggle");
 
 toggle.forEach((event) => {
   event.addEventListener("click", () => {
