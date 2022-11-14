@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  background: no-repeat linear-gradient(hsl(273, 75%, 66%), hsl(240, 73%, 65%));
+  background-size: cover;
+  min-height: 100vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 0.75em;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+article {
+  background: #fff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  position: relative;
+  width: 90%;
+  margin: auto;
+  margin-top: 10rem;
+}
+
+li {
+  border-bottom: 1px solid hsl(240, 5%, 91%);
+  overflow: hidden;
+  padding: 1rem 0;
+  position: relative;
+}
+
+.drop-down {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: hsl(237, 12%, 33%);
+  cursor: pointer;
+}
+.drop-down:hover {
+  color: hsl(14, 88%, 65%);
+}
+.drop-down img {
+  transition: all 0.5s ease;
+}
+.color {
+  color: hsl(238, 29%, 16%);
+  font-size: 1rem;
+}
+.color > img {
+  transform: rotate(180deg);
+}
+p {
+  color: hsl(240, 6%, 50%);
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+h1 {
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 1.5rem 0;
+}
+
+.img-container {
+  margin: auto;
+  background: no-repeat url(./images/bg-pattern-mobile.svg);
+  background-size: 90%;
+  background-position: bottom 1.8rem center;
+  height: 8rem;
+}
+picture img {
+  transform: translateY(-9rem);
+  width: 90%;
+  margin: auto;
+}
+.box-img {
+  display: none;
+}
+ul {
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 600px) {
+  article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: auto;
+    width: auto;
+    padding: 0;
+  }
+  .img-container {
+    background: no-repeat url(./images/bg-pattern-desktop.svg);
+    background-position: bottom -10rem right 5rem;
+    overflow: hidden;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .box-img {
+    display: block;
+    position: fixed;
+    left: 7.5rem;
+    top: 16.5rem;
+    z-index: 99;
+  }
+  picture img {
+    transform: translateX(-5rem);
+    width: 100%;
+  }
+  h1 {
+    text-align: left;
+    font-size: 2rem;
+  }
+  .faq {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+  }
+  ul {
+    max-width: 24vw;
+  }
+}
