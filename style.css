@@ -74,7 +74,10 @@ li {
   cursor: pointer;
   padding: 1rem 0;
 }
-
+.drop-down {
+  font-weight: 700;
+  transition: all 0.5s ease;
+}
 .drop-down:hover {
   color: hsl(14, 88%, 65%);
 }
@@ -83,17 +86,15 @@ li {
 }
 .color {
   color: hsl(238, 29%, 16%);
-  font-weight: bold;
+  font-size: 1.1em;
 }
 .color > img {
   transform: rotate(180deg);
 }
-p {
-  color: hsl(240, 6%, 50%);
-  transition: all 0.5s ease;
-}
 
 .hide {
+  color: hsl(240, 6%, 50%);
+  transition: all 0.5s ease;
   height: 0;
 }
 .show {
